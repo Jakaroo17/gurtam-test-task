@@ -72,7 +72,7 @@ python3 Task1/main.py
 
 + Task1
     + models
-        + __init__.py      - Файл для инциализации ODB SQLAlchemy
+        + __init__.py      - Файл для инциализации ORM SQLAlchemy
         + database.py      - Python-скрипт с инциализацией БД и созданием сессий
         + M.py             - Дата класс для пакетов M, а также определение полей
         + SD.py            - Дата-класс для пакетов SD, а также определение полей
