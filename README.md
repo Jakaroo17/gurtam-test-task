@@ -60,11 +60,23 @@ pip3 install -r requirements.txt
 pip install virtualenv
 python3 -m venv env
 source env/bin/activate
-pip3 install -r requirements.txt
+(env) pip3 install -r requirements.txt
 ```
 2. Запуск скрипта
 ```
 python3 Task1/main.py
 ```
 
+В Task1 находятся следующие файлы
 
+├── Task1
+│   ├── models
+│        └── __init__.py      - Файл для инциализации ODB SQLAlchemy
+│        └── database.py      - Python-скрипт с инциализацией БД и созданием сессий
+│        └── M.py             - Дата класс для пакетов M, а также определение полей
+│        └── SD.py            - Дата-класс для пакетов SD, а также определение полей
+│   ├── application.sqlite    - База данных в которых хранится вся информация
+│   ├── create_database.py    - Python-скрипт с методами вставки информации информации из бд, использующая функции    
+│   │                           parser.py
+│   ├── main.py               - Главная точка входа в приложение
+│   ├── parser.py             - Python-скрипт с методами парсинга строк
